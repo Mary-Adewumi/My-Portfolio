@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary's Portfolio</title>
+    <link rel="stylesheet" href="my port.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul class="menu-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li> 
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi, I'm <span>Mary</span></h3>
+            <h1><span>F</span>RONTEND <span>D</span>EVELOPER</h1>
+            <p>I'm a passionate frontend developer learning new skills to create amazing web experiences.</p>
+        </div>
+        <div class="img-box">
+            <img src="my portfolio pic.jpg" alt="My photo">
+        </div>
+    </section>
+
+    <div class="icons">
+        <a href="http://linkedin.com/in/adewumi-mary-b451ab297" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="" target="_blank"><ion-icon name="logo-instagram" ></ion-icon></a>
+        <a href="https://x.com/toba_2204?s=21"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://github.com/Mary-Adewumi" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Mary Adewumi</strong>, an enthusiastic and detail-oriented Frontend Developer based in Lagos, Nigeria. I’m passionate about turning creative ideas into functional and responsive websites that users enjoy.</p>
+      
+        <p>I recently completed a tech bootcamp where I collaborated with a team to build real-life projects like a safety alert app (<em>BeepSafe</em>). These experiences helped me grow technically and strengthened my teamwork and communication skills.</p>
+      
+        <p>I also took a course in Product Design, which helped me understand how to structure user-friendly interfaces. I know my way around <strong>Figma</strong> and can confidently use it to create wireframes, mockups, and UI prototypes. This design knowledge complements my frontend work and allows me to bring ideas to life from concept to code.</p>
+      
+        <p>My core strengths include:
+          <ul>
+            <li> Writing clean, semantic HTML</li>
+            <li> Designing responsive layouts with CSS</li>
+            <li> Adding interactivity with JavaScript</li>
+            <li> Deploying live projects using GitHub & Vercel</li>
+          </ul>
+        </p>
+      
+        <p>I’m currently learning React.js. I enjoy solving problems, learning new tools, and continuously improving my skills.</p>
+      
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, GitHub, Vercel, React (beginner), Figma</p>
+      
+        <p>In my free time, I enjoy exploring UI design ideas, watching web development tutorials, and helping others solve beginner coding challenges.</p>
+      </section>
+      
+
+    <section id="projects">
+        <p><i>here are few of my project</i></p>
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A description of this project.</p>
+            <a href="http://127.0.0.1:5501/My%20internship%20project/PIN.html" target="_blank" class="btn"> view project 1</a>
+        </div>
+        
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A description of this project.</p>
+            <a href="http://127.0.0.1:5501/Dive%20africa-projects/Grid-ass-5.html" target="_blank" class="btn"> view project 2</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>A description of this project.</p>
+            <a href="http://127.0.0.1:5501/Dive%20africa-projects/semantics.html?baking=on#contact" target="_blank" class="btn"> view project 3</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 4</h3>
+            <p>A description of this project.</p>
+            <a href="http://127.0.0.1:5501/Dive%20africa-projects/psuedo-class.html" target="_blank" class="btn"> view project 4</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 5</h3>
+            <p>A description of this project.</p>
+            <a href="http://127.0.0.1:5501/Dive%20africa-projects/js-practice.html" target="_blank" class="btn"> view project 5</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 6</h3>
+            <p>A description of the bootcamp project.</p>
+            <p>BeepSafe is a safety alert web application developed during my frontend bootcamp. The platform allows users to send emergency alerts, share their live location, connect with trusted contacts, and post real-time incident updates. I worked on the responsive frontend using HTML, CSS, and JavaScript, and collaborated with my team to build a user-friendly and interactive interface.</p>
+            <a href="https://beep-safe.vercel.app/" target="_blank" class="btn"> view project 6</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me!</p>
+        
+        <!-- Contact Button -->
+        <button id="contactBtn" onclick="showThankYouMessage()">Contact Me</button>
+        
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    
+        <!-- Thank You Message (Hidden initially) -->
+        <div id="thankYouMessage" style="display: none;">
+            <p>Thank you for contacting us! We'll get back to you soon.</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Coming soon...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mary’s Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            menu.classList.toggle("open");
+        }
+        // Smooth scroll to the Contact section when the Contact Me button is clicked
+function scrollToContact() {
+    const contactSection = document.getElementById("contact");
+    contactSection.scrollIntoView({
+        behavior: "smooth"
+    });
+}
+// Show the "Thank You" message and hide the form when the Contact Me button is clicked
+function showThankYouMessage() {
+    // Hide the contact form
+    document.getElementById("contactForm").style.display = "none";
+
+    // Show the "Thank You" message
+    document.getElementById("thankYouMessage").style.display = "block";
+}
+
+
+    </script>
+
+</body>
+</html>
